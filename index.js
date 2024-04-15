@@ -5,7 +5,7 @@ let bankBranchInstance = null;
 class BankBranch {
   constructor(branchInfo) {
     // 3. Check if an instance of the BankBranch class already exists
-    if (bankBranchInstance === null) {
+    if (!bankBranchInstance) {
       // If no instance exists, create a new one with the provided branchInfo
       this.branchInfo = branchInfo;
       bankBranchInstance = this;
